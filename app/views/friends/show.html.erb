@@ -1,0 +1,26 @@
+
+
+<div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>
+            <%= @friend.first_name %>
+            <%= @friend.last_name %>
+          </h2>
+
+          <p class="lead">
+            <%= @friend.email %> | <%= @friend.phone %> | <%= @friend.twitter %>
+          </p>
+          <br/>
+          <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-dark" %> 
+          <%= link_to 'Delete Friend', @friend, method: :delete, data: { confirm: 'Are you sure?' }, 
+                class:"btn btn-danger btn" %>
+          <%= link_to 'Back', friends_path, class:"btn btn-dark" %>
+        </div>
+      </div>
+    </div>
+
+
+<p>
+
+
+
